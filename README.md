@@ -33,11 +33,19 @@ A Java-based web application for managing employee records.
 - Added View All Employees button
 - Added basic CSS styling
 
-## CRUD Progress
+## Day 3 — Update Employee
 
+- Created Edit Employee functionality
+- Implemented getEmployeeById()
+- Created Update Employee form
+- Implemented updateEmployee()
+- Updated employee records in MySQL
+- Tested employee update functionality
+
+## CRUD Progress
 - Create ✅
 - Read ✅
-- Update ⏳
+- Update ✅
 - Delete ⏳
 
 ## Project Status
