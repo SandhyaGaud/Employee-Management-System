@@ -41,13 +41,22 @@ A Java-based web application for managing employee records.
 - Implemented updateEmployee()
 - Updated employee records in MySQL
 - Tested employee update functionality
+- 
+## Day 4 — Delete Employee
 
+- Added Delete Employee functionality
+- Created Delete confirmation popup
+- Created `DeleteEmployeeServlet`
+- Implemented `deleteEmployee()`
+- Deleted employee records from MySQL using JDBC
+- Tested Cancel and Delete functionality
+  
 ## CRUD Progress
 - Create ✅
 - Read ✅
 - Update ✅
-- Delete ⏳
+- Delete ✅
 
 ## Project Status
 
-Currently building the project step-by-step while learning Java web development.
+Basic CRUD functionality completed. Continuing to add advanced features for a polished portfolio-level Java web application.
