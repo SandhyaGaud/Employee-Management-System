@@ -50,13 +50,35 @@ A Java-based web application for managing employee records.
 - Implemented `deleteEmployee()`
 - Deleted employee records from MySQL using JDBC
 - Tested Cancel and Delete functionality
-  
-## CRUD Progress
-- Create ✅
-- Read ✅
-- Update ✅
-- Delete ✅
+
+## Day 5 — CRUD Testing & Validation
+
+- Tested complete CRUD operations
+- Tested adding employees with valid data
+- Tested updating employee records
+- Tested deleting employee records
+- Tested viewing all employee records
+- Tested duplicate email handling
+- Tested required-field validation
+- Verified employee data in MySQL
+- Fixed and verified issues found during testing
+
+### Testing Status
+- Create Employee: ✅ Passed
+- Read Employees: ✅ Passed
+- Update Employee: ✅ Passed
+- Delete Employee: ✅ Passed
+- Duplicate Email Validation: ✅ Passed
+- Required Field Validation: ✅ Passed
 
 ## Project Status
 
-Basic CRUD functionality completed. Continuing to add advanced features for a polished portfolio-level Java web application.
+Current Progress: 5/30 Days Completed 🚀
+
+- Day 1: Create Employee ✅
+- Day 2: Read Employees ✅
+- Day 3: Update Employee ✅
+- Day 4: Delete Employee ✅
+- Day 5: CRUD Testing & Validation ✅
+
+Overall Status: CRUD functionality completed and tested successfully.
