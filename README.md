@@ -63,6 +63,20 @@ A Java-based web application for managing employee records.
 - Verified employee data in MySQL
 - Fixed and verified issues found during testing
 
+## Day 6 — Project Structure Improvement
+
+- Reviewed the complete project structure
+- Organized Model, DAO, Controller and JSP files
+- Improved code readability
+- Cleaned unnecessary code and comments
+- Reviewed JDBC connection handling
+- Corrected JSP table structure
+- Tested complete CRUD functionality after restructuring
+
+### Day 6 Status
+✅ Project structure improved  
+✅ CRUD operations tested successfully  
+
 ### Testing Status
 - Create Employee: ✅ Passed
 - Read Employees: ✅ Passed
@@ -73,12 +87,13 @@ A Java-based web application for managing employee records.
 
 ## Project Status
 
-Current Progress: 5/30 Days Completed 🚀
+Current Progress: 6/30 Days Completed 🚀
 
 - Day 1: Create Employee ✅
 - Day 2: Read Employees ✅
 - Day 3: Update Employee ✅
 - Day 4: Delete Employee ✅
 - Day 5: CRUD Testing & Validation ✅
+- Day 6 — Project Structure Improvement ✅
 
-Overall Status: CRUD functionality completed and tested successfully.
+
