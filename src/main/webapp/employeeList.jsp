@@ -35,7 +35,10 @@
     <th>Salary</th>
     <th>Action</th>
 </tr>
-
+<form action="searchEmployee" method="get">
+    <input type="text" name="keyword" placeholder="Search by name or email">
+    <button type="submit">Search</button>
+</form>
 <%
     List<Employee> employees =
         (List<Employee>) request.getAttribute("employees");
@@ -50,17 +53,15 @@
     <td><%= employee.getDepartment() %></td>
     <td><%= employee.getSalary() %></td>
     
+	<td>
+    	<a href="updateEmployee?id=<%= employee.getEmpId() %>">Edit</a>
+   		<a href="deleteEmployee?id=<%= employee.getEmpId() %>"
+  			 onclick="return confirm('Are you sure you want to delete this employee?');">
+  				 Delete
+  				 </a>	 
+  			</td>
 </tr>
-<td>
-    <a href="updateEmployee?id=<%= employee.getEmpId() %>">
-        Edit
-    </a>
-    <a href="deleteEmployee?id=<%= employee.getEmpId() %>"
-   onclick="return confirm('Are you sure you want to delete this employee?');">
-   Delete
-</a>
-</td>
-<th>Action</th>
+  <!--<thAction</th>-->
 
 <%
     }

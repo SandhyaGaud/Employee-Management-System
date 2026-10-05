@@ -1,6 +1,7 @@
 package com.ems.dao;
 
 import java.sql.ResultSet;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.sql.Connection;
@@ -8,6 +9,7 @@ import java.sql.PreparedStatement;
 
 import com.ems.model.Employee;
 import com.ems.util.DBConnection;
+import java.util.List;
 
 public class EmployeeDAO {
 
@@ -146,4 +148,28 @@ public class EmployeeDAO {
     		        return false;
     		  
 }
+    		  
+    public List<Employee> searchEmployees(String keyword) {
+    // we'll add the SQL code next
+    
+    
+    String sql = "SELECT * FROM employee WHERE emp_name LIKE ? OR email LIKE ?";
+    PreparedStatement ps = connection.prepareStatement(sql);
+    ps.setString(1, "%" + keyword + "%");
+    ps.setString(2, "%" + keyword + "%");
+    ResultSet rs = ps.executeQuery();
+    List<Employee> employees = new ArrayList<>();
+    while (rs.next()) {
+        Employee emp = new Employee();
+        emp.setEmpId(rs.getInt("emp_id"));
+        emp.setEmpName(rs.getString("emp_name"));
+        emp.setEmail(rs.getString("email"));
+        emp.setDepartment(rs.getString("department"));
+        emp.setSalary(rs.getDouble("salary"));
+        
+        employees.add(emp);
+        return employees;
+    }
+    
+    }
 }

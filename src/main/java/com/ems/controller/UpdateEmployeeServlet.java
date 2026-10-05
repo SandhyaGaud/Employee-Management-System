@@ -17,12 +17,12 @@ public class UpdateEmployeeServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 	        throws ServletException, IOException {
-		int id = Integer.parseInt(request.getParameter("id"));
+		int id = Integer.parseInt(request.getParameter("id"));// Get employee ID
 		
-		EmployeeDAO dao = new EmployeeDAO();
-		Employee employee = dao.getEmployeeById(id);
+		EmployeeDAO dao = new EmployeeDAO();// Create DAO object
+		Employee employee = dao.getEmployeeById(id); // Get employee from database
 		
-		request.setAttribute("employee", employee);
+		request.setAttribute("employee", employee);// Send employee to JSP
 
 		request.getRequestDispatcher("updateEmployee.jsp")
 		       .forward(request, response);
@@ -30,7 +30,8 @@ public class UpdateEmployeeServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 	        throws ServletException, IOException {
 		
-		int id = Integer.parseInt(request.getParameter("empId"));
+		int id = Integer.parseInt(request.getParameter("empId")); // Get employee ID
+		// Get updated employee details
 		String empName = request.getParameter("empName");
 		String email = request.getParameter("email");
 		String department = request.getParameter("department");

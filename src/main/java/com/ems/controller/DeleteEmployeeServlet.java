@@ -18,7 +18,7 @@ public class DeleteEmployeeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        int id = Integer.parseInt(request.getParameter("id"));
+        int id = Integer.parseInt(request.getParameter("id"));// Get employee ID
 
         EmployeeDAO dao = new EmployeeDAO();
         dao.deleteEmployee(id);
