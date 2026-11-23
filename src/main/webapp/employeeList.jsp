@@ -24,7 +24,10 @@
 <body>
 
 <h2>Employee List</h2>
-
+<form action="searchEmployee" method="get">
+    <input type="text" name="keyword" placeholder="Search by name or email">
+    <button type="submit">Search</button>
+</form>
 <table border="1" cellpadding="10">
 
 <tr>
@@ -35,10 +38,7 @@
     <th>Salary</th>
     <th>Action</th>
 </tr>
-<form action="searchEmployee" method="get">
-    <input type="text" name="keyword" placeholder="Search by name or email">
-    <button type="submit">Search</button>
-</form>
+
 <%
     List<Employee> employees =
         (List<Employee>) request.getAttribute("employees");
